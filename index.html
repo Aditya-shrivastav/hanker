@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hanker Analytics - Empowering Tomorrow with Data Today</title>
+    <!-- Bootstrap CSS and icons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .carousel-control-prev:hover,
+      .carousel-control-prev:focus,
+      .carousel-control-next:hover,
+      .carousel-control-next:focus {
+        background: #000 !important;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+        opacity: 0.5;
+      }
+
+      /* Carousel text content styling */
+      .carousel-caption-box {
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.6) 0%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px 0 rgba(50, 100, 255, 0.08);
+        padding: 2rem 2.5rem;
+        max-width: 620px;
+        margin-top: 4rem;
+        margin-left: 6rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .carousel-caption-box h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      .carousel-caption-box p {
+        font-size: 24px;
+      }
+
+      .service-image {
+        height: 200px;
+        flex-shrink: 0; /* Prevent image from growing */
+      }
+
+      .service-image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      .service-features {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      .service-features li::before {
+        content: "✓";
+        color: #28a745;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+
+      /* Chrome, Edge, Safari */
+      .service-features::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Firefox */
+      .service-features {
+        scrollbar-width: none; /* Firefox */
+      }
+
+      /* General (but not supported everywhere) */
+      .service-features {
+        -ms-overflow-style: none; /* IE 10+ */
+      }
+
+      .custom-nav,
+      .custom-nav:hover,
+      .custom-nav:focus {
+        background: rgba(0, 0, 0, 0.5) !important;
+        color: white;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        z-index: 1000;
+      }
+
+      /* Position arrows outside the container */
+      .position-relative {
+        padding: 0 60px; /* Add padding to make space for arrows */
+      }
+
+      .service-card {
+        border: 2px solid #ededed !important;
+        height: 480px; /* Fixed height */
+        padding: 24px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .service-card .card-body {
+        padding: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 0; /* Important for flex children */
+      }
+
+      .service-card .service-features {
+        flex: 1;
+        overflow-y: auto; /* Add scroll if content overflows */
+        min-height: 0; /* Important for flex overflow */
+      }
+
+      .service-card .card-text {
+        flex-shrink: 0; /* Prevent description from growing */
+      }
+
+      .learn-more-link {
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .learn-more-link:hover {
+        text-decoration: underline !important;
+        text-underline-offset: 4px;
+        transform: translateX(5px);
+      }
+
+      .learn-more-link:hover i {
+        transform: translateX(3px);
+      }
+
+      .learn-more-link i {
+        transition: transform 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .custom-nav {
+          width: 40px;
+          height: 40px;
+        }
+        .position-relative {
+          padding: 0 50px; /* Less padding on mobile */
+        }
+      }
+
+      @media (max-width: 768px) {
+        .carousel-caption-box {
+          margin: 2rem auto 0 auto; /* Top margin, centered horizontally */
+          width: 90%;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Hero Carousel -->
+    <section class="container-fluid p-0">
+      <div
+        id="heroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="13500"
+      >
+        <div class="carousel-inner w-100" style="height: 600px">
+          <!-- Slide 1 -->
+          <div class="carousel-item active h-100" style="height: 600px">
+            <div
+              class="w-100 h-100 d-flex align-items-start justify-content-start"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="carousel-caption-box">
+                <h1 class="text-primary mb-2">Commercial Data Analytics</h1>
+                <p class="mb-0">
+                  Supercharge Sales and Marketing with data-driven analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item h-100" style="height: 600px">
+            <div
+              class="w-100 h-100 d-flex align-items-start justify-content-start"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?fit=cover&w=1200&q=80');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="carousel-caption-box">
+                <h1 class="text-primary mb-2">Business Intelligence</h1>
+                <p class="mb-0">
+                  Transform raw data into actionable insights for smarter
+                  decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item h-100" style="height: 600px">
+            <div
+              class="w-100 h-100 d-flex align-items-start justify-content-start"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?fit=cover&w=1200&q=80');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="carousel-caption-box">
+                <h1 class="text-primary mb-2">Data Science & Engineering</h1>
+                <p class="mb-0">
+                  Predict outcomes, optimize performance and scale securely with
+                  our experts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls: Black background, white arrow, margin off edges -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+          style="
+            top: 50%;
+            transform: translateY(-50%);
+            left: 32px;
+            background: #000;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 48px;
+            height: 48px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            style="color: #fff"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+          style="
+            top: 50%;
+            transform: translateY(-50%);
+            right: 32px;
+            background: #000;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 48px;
+            height: 48px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            style="color: #fff"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <h2 class="display-5 fw-bold mb-3 text-dark">Services</h2>
+            <p class="lead text-muted">
+              Comprehensive data analytics and business intelligence solutions
+              tailored for the life science and pharma industry
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="position-relative">
+          <!-- Custom Navigation -->
+          <button
+            class="btn shadow-sm rounded-circle custom-nav prev position-absolute top-50 start-0 translate-middle-y z-3"
+            style="left: -45px !important"
+          >
+            <i class="bi bi-chevron-left fs-5"></i>
+          </button>
+
+          <button
+            class="btn shadow-sm rounded-circle custom-nav next position-absolute top-50 start-100 translate-middle-y z-3"
+            style="right: -45px !important"
+          >
+            <i class="bi bi-chevron-right fs-5"></i>
+          </button>
+
+          <!-- Owl Carousel -->
+          <div class="owl-carousel owl-theme">
+            <!-- Service 1: Data Management -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="Data Management"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">Data Management</h5>
+                  <p class="card-text text-muted">
+                    Master Data Management, Data Quality Engine, and robust data
+                    frameworks.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Data Strategy & Governance</li>
+                    <li>Data Quality Management</li>
+                    <li>Master Data Management</li>
+                    <li>Data Integration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2: Analytics & BI -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="Analytics & BI"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">Analytics & BI</h5>
+                  <p class="card-text text-muted">
+                    BI Solutions, enriched contextual insights, and embedded
+                    AI/ML for powerful analytics.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Business Intelligence Solutions</li>
+                    <li>Advanced Analytics & Insights</li>
+                    <li>Geospatial Analysis</li>
+                    <li>Performance Dashboards</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3: Data Engineering -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="Data Engineering"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">Data Engineering</h5>
+                  <p class="card-text text-muted">
+                    Cloud-based data engineering solutions and automation for
+                    scalable data infrastructure.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Cloud Data Solutions</li>
+                    <li>Data Pipeline Development</li>
+                    <li>Automation & RPA</li>
+                    <li>Data Warehouse</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4: AI & ML -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="AI & ML"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">AI & ML</h5>
+                  <p class="card-text text-muted">
+                    Advanced AI/ML solutions including Conversational AI,
+                    cognitive intelligence, and NLP.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Conversational AI</li>
+                    <li>Cognitive Intelligence</li>
+                    <li>Unstructured Data Analysis</li>
+                    <li>Predictive Modeling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 5: Data Security -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="Data Security"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">Data Security</h5>
+                  <p class="card-text text-muted">
+                    Comprehensive data security and compliance solutions for
+                    sensitive industry data.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Data Governance</li>
+                    <li>Compliance Management</li>
+                    <li>Security Frameworks</li>
+                    <li>Risk Assessment</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 6: Consulting -->
+            <div class="item">
+              <div class="card service-card rounded">
+                <div class="service-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=cover&w=1200&q=80"
+                    class="card-img-top w-100"
+                    alt="Consulting"
+                  />
+                </div>
+                <div class="card-body mt-3">
+                  <h5 class="card-title fw-bold text-dark">Consulting</h5>
+                  <p class="card-text text-muted">
+                    Strategic consulting services to optimize your data
+                    infrastructure and analytics capabilities.
+                  </p>
+                  <ul class="service-features text-muted">
+                    <li>Digital Transformation</li>
+                    <li>Strategy Development</li>
+                    <li>Implementation Support</li>
+                    <li>Training & Workshops</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <a
+              href="services.html"
+              class="learn-more-link text-primary text-decoration-none fw-bold fs-5 d-inline-flex align-items-center"
+            >
+              Learn more
+              <i class="bi bi-arrow-right ms-3 fs-6"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <div id="contact-cta"></div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Initialize Owl Carousel -->
+    <script>
+      $(document).ready(function () {
+        var owl = $(".owl-carousel");
+
+        owl.owlCarousel({
+          loop: true,
+          margin: 24,
+          nav: false, // Disable default navigation
+          dots: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            992: {
+              items: 3,
+            },
+          },
+        });
+
+        // Custom navigation
+        $(".custom-nav.next").click(function () {
+          owl.trigger("next.owl.carousel");
+        });
+
+        $(".custom-nav.prev").click(function () {
+          owl.trigger("prev.owl.carousel");
+        });
+      });
+    </script>
+    <script>
+      // Load components
+      $(function () {
+        $("#header").load("header.html");
+        $("#contact-cta").load("contact-cta.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <script>
+      // Page load transition
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mark body as ready for fade-in
+        document.body.classList.add("page-ready");
+
+        // Add loaded class to transition elements after a short delay
+        setTimeout(function () {
+          const transitionElements =
+            document.querySelectorAll(".page-transition");
+          transitionElements.forEach((element) => {
+            element.classList.add("page-loaded");
+          });
+        }, 50);
+      });
+
+      // Smooth page exit for internal links
+      document.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (link && link.href) {
+          const href = link.href;
+          const currentOrigin = window.location.origin;
+
+          // Check if it's an internal link
+          if (
+            href.startsWith(currentOrigin + "/") ||
+            href === currentOrigin + "/" ||
+            href === currentOrigin
+          ) {
+            e.preventDefault();
+
+            // Add exit animation
+            document.body.style.opacity = "0";
+            document.body.style.transition = "opacity 0.3s ease-out";
+
+            // Navigate after animation
+            setTimeout(function () {
+              window.location.href = href;
+            }, 300);
+          }
+        }
+      });
+
+      // Handle browser back/forward buttons
+      window.addEventListener("pageshow", function (e) {
+        if (e.persisted) {
+          document.body.style.opacity = "1";
+        }
+      });
+    </script>
+  </body>
+</html>
