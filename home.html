@@ -563,6 +563,15 @@
         $("#contact-cta").load("contact-cta.html");
         $("#footer").load("footer.html");
       });
+
+      // Update active state in navigation
+      $(document).ready(function () {
+        // This will run after the header is loaded
+        setTimeout(function () {
+          $(".nav-link").removeClass("active");
+          $('a[href="home.html"]').addClass("active");
+        }, 100);
+      });
     </script>
     <script>
       // Page load transition

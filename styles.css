@@ -1,3 +1,12 @@
+:root {
+  --secondary: #2c3e50;
+  --accent: #e74c3c;
+  --light: #f8f9fa;
+  --dark: #2c3e50;
+  --primary: #3498db;
+  --primary-light: #ebf5fb;
+}
+
 .navbar-nav .nav-link {
   font-family: "Inter-SemiBold", "Inter", sans-serif;
   font-weight: 600; /* SemiBold */
@@ -46,4 +55,37 @@ body {
 
 body.page-ready {
   opacity: 1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar active link styling */
+.navbar .nav-link.active {
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    height: auto !important;
+    min-height: 85px;
+  }
+
+  .navbar .container {
+    height: auto !important;
+    padding: 10px 0 !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-nav {
+    gap: 1rem !important;
+  }
 }
