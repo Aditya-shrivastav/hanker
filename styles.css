@@ -89,3 +89,13 @@ body.page-ready {
     gap: 1rem !important;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .custom-nav {
+    display: none;
+  }
+}
