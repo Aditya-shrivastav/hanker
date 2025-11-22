@@ -171,13 +171,20 @@
         .position-relative {
           padding: 0 50px; /* Less padding on mobile */
         }
-      }
-
-      @media (max-width: 768px) {
         .carousel-caption-box {
           margin: 2rem auto 0 auto; /* Top margin, centered horizontally */
           width: 90%;
           padding: 1rem;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .service-image {
+          height: auto;
+        }
+        .service-image img {
+          width: 100%;
+          height: auto;
         }
       }
     </style>

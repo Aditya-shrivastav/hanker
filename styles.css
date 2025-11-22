@@ -7,9 +7,17 @@
   --primary-light: #ebf5fb;
 }
 
+.navbar {
+  font-weight: 600;
+  font-size: 18px !important;
+}
+
+.navbar .container {
+  height: 85px !important;
+}
+
 .navbar-nav .nav-link {
   font-family: "Inter-SemiBold", "Inter", sans-serif;
-  font-weight: 600; /* SemiBold */
 }
 
 /* Contact CTA Button Hover Effects */
@@ -73,10 +81,10 @@ body.page-ready {
   .navbar {
     height: auto !important;
     min-height: 85px;
+    font-size: 16px !important;
   }
 
   .navbar .container {
-    height: auto !important;
     padding: 10px 0 !important;
   }
 
@@ -95,7 +103,29 @@ body.page-ready {
     padding: 0 1rem;
   }
 
+  .navbar-brand {
+    font-size: 12px !important;
+  }
+
   .custom-nav {
     display: none;
+  }
+
+  .navbar .container {
+    height: 60px !important;
+  }
+
+  .navbar .navbar-toggler {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 270px) {
+  .navbar-toggler {
+    margin: 1rem 0rem;
+  }
+
+  .navbar {
+    height: 120px !important;
   }
 }

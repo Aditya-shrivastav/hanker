@@ -96,6 +96,21 @@
           transform: rotate(360deg);
         }
       }
+
+      @media (max-width: 576px) {
+        .toast-container {
+          top: 10px !important;
+          right: 0 !important;
+          left: 0 !important;
+          margin: 0 auto;
+          width: 90%; /* fits inside mobile screen */
+        }
+
+        .toast {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
     </style>
   </head>
   <body>
