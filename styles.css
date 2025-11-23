@@ -59,6 +59,13 @@ html {
 body {
   opacity: 0;
   transition: opacity 0.3s ease-in;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 body.page-ready {
@@ -85,6 +92,7 @@ body.page-ready {
   }
 
   .navbar .container {
+    height: auto !important;
     padding: 10px 0 !important;
   }
 
@@ -111,8 +119,8 @@ body.page-ready {
     display: none;
   }
 
-  .navbar .container {
-    height: 60px !important;
+  .navbar .container .navbar-brand {
+    height: 40px !important;
   }
 
   .navbar .navbar-toggler {
@@ -123,9 +131,5 @@ body.page-ready {
 @media (max-width: 270px) {
   .navbar-toggler {
     margin: 1rem 0rem;
-  }
-
-  .navbar {
-    height: 120px !important;
   }
 }
