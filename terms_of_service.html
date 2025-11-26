@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service | Your Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary-color: #0369a1;
+        --secondary-color: #0c4a6e;
+        --accent-color: #e0f2fe;
+        --bg-color: #f0f9ff;
+        --text-color: #0c4a6e;
+        --header-bg: linear-gradient(135deg, #0369a1, #0c4a6e);
+      }
+
+      body {
+        color: var(--text-color);
+        line-height: 1.6;
+        background-color: var(--bg-color);
+      }
+
+      .terms-header {
+        background: var(--header-bg);
+        color: white;
+        padding: 4rem 0;
+        margin-bottom: 2rem;
+      }
+
+      .terms-section {
+        padding: 2rem 0;
+        border-bottom: 1px solid #cfe2ff;
+      }
+
+      .terms-section:last-of-type {
+        border-bottom: none;
+      }
+
+      .section-title {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+      }
+
+      .highlight-box {
+        background-color: var(--accent-color);
+        border-left: 4px solid var(--primary-color);
+        padding: 1.5rem;
+        border-radius: 0 8px 8px 0;
+        margin: 1.5rem 0;
+      }
+
+      .info-card {
+        transition: transform 0.3s ease;
+        height: 100%;
+        border: none;
+        box-shadow: 0 4px 6px rgba(3, 105, 161, 0.1);
+        background-color: white;
+      }
+
+      .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(3, 105, 161, 0.15);
+      }
+
+      .info-card .card-body {
+        padding: 1.5rem;
+      }
+
+      .info-card i {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+
+      .contact-info {
+        background-color: var(--accent-color);
+        padding: 2rem;
+        border-radius: 8px;
+      }
+
+      footer {
+        background-color: #0c4a6e;
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+      }
+
+      .list-group-item {
+        background-color: white;
+        border: 1px solid #cfe2ff;
+      }
+
+      .alert-info {
+        background-color: #e0f2fe;
+        border-color: #0369a1;
+        color: #0c4a6e;
+      }
+
+      .alert-warning {
+        background-color: #fffbeb;
+        border-color: #f59e0b;
+        color: #92400e;
+      }
+
+      .badge {
+        background-color: var(--primary-color) !important;
+      }
+
+      .nav-pills .nav-link.active {
+        background-color: var(--primary-color);
+      }
+
+      .nav-pills .nav-link {
+        color: var(--primary-color);
+      }
+
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .terms-header h1 {
+          font-size: 1.8rem;
+        }
+
+        .terms-header p {
+          font-size: 1rem;
+        }
+
+        .terms-section {
+          padding: 1.5rem 0;
+        }
+
+        .section-title {
+          font-size: 1.5rem;
+        }
+
+        .sticky-top {
+          position: relative !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div>
+      <!-- header.html -->
+      <nav class="navbar navbar-expand-lg" style="background: #fff">
+        <div class="container" style="padding: 15px 0px">
+          <!-- Company Logo, adjusts to navbar height -->
+          <a
+            class="navbar-brand p-0 m-0 d-flex align-items-center"
+            href="index.html"
+            style="height: 70%"
+          >
+            <img
+              src="./assets/logo.png"
+              alt="Source Node Technologies"
+              style="
+                height: 100%;
+                max-height: 70px;
+                width: auto;
+                display: block;
+              "
+            />
+            <span style="margin-left: 10px; color: #222">
+              Source Node Technologies
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto" style="gap: 2rem; font-size: 14px">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: #222"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="solutions.html" style="color: #222"
+                  >Solutions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" style="color: #222"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #222"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #222"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <header class="terms-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold">Terms of Service</h1>
+            <p class="lead">
+              Please read these terms carefully before using our website and
+              services.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <i class="fas fa-file-contract fa-5x opacity-75"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="row">
+        <!-- Quick Navigation -->
+        <div class="col-lg-3 mb-4">
+          <div class="sticky-top" style="top: 20px">
+            <div class="card info-card">
+              <div class="card-header bg-transparent border-bottom-0">
+                <h5 class="mb-0">Quick Navigation</h5>
+              </div>
+              <div class="card-body py-2">
+                <div
+                  class="nav flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <a
+                    class="nav-link active"
+                    href="#introduction"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Introduction</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#accounts"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >User Accounts</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#content"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Content & Conduct</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#intellectual"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Intellectual Property</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#termination"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Termination</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#liability"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Liability</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#governing"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Governing Law</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#changes"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Changes to Terms</a
+                  >
+                  <a
+                    class="nav-link"
+                    href="#contact"
+                    data-bs-toggle="pill"
+                    role="tab"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="col-lg-9">
+          <div class="tab-content">
+            <!-- Introduction Section -->
+            <section
+              class="terms-section tab-pane fade show active"
+              id="introduction"
+            >
+              <h2 class="section-title">Introduction</h2>
+              <p>
+                Welcome to our Terms of Service. These terms govern your use of
+                our website and services. By accessing or using our services,
+                you agree to be bound by these terms.
+              </p>
+
+              <div class="highlight-box">
+                <h5>
+                  <i class="fas fa-exclamation-circle me-2"></i> Important
+                  Notice
+                </h5>
+                <p class="mb-0">
+                  Please read these terms carefully. If you do not agree with
+                  any part of these terms, you must not use our services.
+                </p>
+              </div>
+
+              <p>
+                We reserve the right to update or modify these terms at any time
+                without prior notice. Your continued use of the service after
+                any changes constitutes your acceptance of the new terms.
+              </p>
+            </section>
+
+            <!-- User Accounts Section -->
+            <section class="terms-section tab-pane fade" id="accounts">
+              <h2 class="section-title">User Accounts</h2>
+              <p>
+                To access certain features of our service, you may be required
+                to create an account. When creating an account, you agree to:
+              </p>
+
+              <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                  <div class="card info-card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-user-check"></i>
+                      <h5 class="card-title">Provide Accurate Information</h5>
+                      <p class="card-text">
+                        Supply true, accurate, and complete information during
+                        registration.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card info-card">
+                    <div class="card-body text-center">
+                      <i class="fas fa-lock"></i>
+                      <h5 class="card-title">Maintain Security</h5>
+                      <p class="card-text">
+                        Keep your password secure and accept responsibility for
+                        all activities under your account.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-warning mt-4">
+                <h5>
+                  <i class="fas fa-exclamation-triangle me-2"></i> Account
+                  Responsibility
+                </h5>
+                <p class="mb-0">
+                  You are responsible for maintaining the confidentiality of
+                  your account and password. You agree to accept responsibility
+                  for all activities that occur under your account.
+                </p>
+              </div>
+            </section>
+
+            <!-- Content & Conduct Section -->
+            <section class="terms-section tab-pane fade" id="content">
+              <h2 class="section-title">Content & Conduct</h2>
+              <p>
+                You are responsible for any content you post on our service and
+                the consequences of sharing that content. By posting content,
+                you affirm that you have the necessary rights to share that
+                material.
+              </p>
+
+              <div class="highlight-box">
+                <h5>Prohibited Activities</h5>
+                <p>When using our service, you agree not to:</p>
+                <ul>
+                  <li>Violate any laws or regulations</li>
+                  <li>Infringe upon the rights of others</li>
+                  <li>Post harmful, threatening, or abusive content</li>
+                  <li>Impersonate any person or entity</li>
+                  <li>Interfere with or disrupt the service</li>
+                  <li>Engage in unauthorized data collection</li>
+                </ul>
+              </div>
+
+              <p>
+                We reserve the right to remove any content that violates these
+                terms or is otherwise objectionable in our sole discretion.
+              </p>
+            </section>
+
+            <!-- Intellectual Property Section -->
+            <section class="terms-section tab-pane fade" id="intellectual">
+              <h2 class="section-title">Intellectual Property</h2>
+              <p>
+                All content, features, and functionality on our service are
+                owned by us or our licensors and are protected by international
+                copyright, trademark, and other intellectual property laws.
+              </p>
+
+              <div class="row mt-4">
+                <div class="col-md-4 text-center mb-4">
+                  <div
+                    class="p-3 border rounded"
+                    style="background-color: white"
+                  >
+                    <i class="fas fa-copyright fa-2x text-primary mb-2"></i>
+                    <h5>Copyright</h5>
+                    <p class="small">
+                      All website content is protected by copyright laws
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <div
+                    class="p-3 border rounded"
+                    style="background-color: white"
+                  >
+                    <i class="fas fa-trademark fa-2x text-primary mb-2"></i>
+                    <h5>Trademarks</h5>
+                    <p class="small">
+                      Our logos and brand names are protected trademarks
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <div
+                    class="p-3 border rounded"
+                    style="background-color: white"
+                  >
+                    <i class="fas fa-code fa-2x text-primary mb-2"></i>
+                    <h5>Proprietary Code</h5>
+                    <p class="small">
+                      Our software and codebase are proprietary
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                You may not reproduce, distribute, modify, create derivative
+                works of, publicly display, or otherwise use any of our
+                intellectual property without our express written permission.
+              </p>
+            </section>
+
+            <!-- Termination Section -->
+            <section class="terms-section tab-pane fade" id="termination">
+              <h2 class="section-title">Termination</h2>
+              <p>
+                We may terminate or suspend your account and access to our
+                service immediately, without prior notice or liability, for any
+                reason, including if you breach these Terms.
+              </p>
+
+              <div class="alert alert-info mt-4">
+                <h5>
+                  <i class="fas fa-info-circle me-2"></i> Upon Termination
+                </h5>
+                <p class="mb-0">
+                  All provisions of the Terms which by their nature should
+                  survive termination shall survive termination, including
+                  ownership provisions, warranty disclaimers, indemnity, and
+                  limitations of liability.
+                </p>
+              </div>
+
+              <p>
+                You may also terminate your account at any time by contacting us
+                or through your account settings, if available.
+              </p>
+            </section>
+
+            <!-- Liability Section -->
+            <section class="terms-section tab-pane fade" id="liability">
+              <h2 class="section-title">Limitation of Liability</h2>
+              <p>
+                To the fullest extent permitted by applicable law, in no event
+                shall we be liable for any indirect, incidental, special,
+                consequential, or punitive damages, including without
+                limitation, loss of profits, data, use, goodwill, or other
+                intangible losses.
+              </p>
+
+              <div class="highlight-box">
+                <h5><i class="fas fa-balance-scale me-2"></i> Disclaimer</h5>
+                <p class="mb-0">
+                  Our service is provided on an "AS IS" and "AS AVAILABLE" basis
+                  without any warranties of any kind, either express or implied.
+                  We do not warrant that the service will be uninterrupted,
+                  timely, secure, or error-free.
+                </p>
+              </div>
+
+              <p>
+                Some jurisdictions do not allow the exclusion of certain
+                warranties or the limitation or exclusion of liability for
+                incidental or consequential damages. Accordingly, some of the
+                above limitations may not apply to you.
+              </p>
+            </section>
+
+            <!-- Governing Law Section -->
+            <section class="terms-section tab-pane fade" id="governing">
+              <h2 class="section-title">Governing Law</h2>
+              <p>
+                These Terms shall be governed and construed in accordance with
+                the laws of the United States, without regard to its conflict of
+                law provisions.
+              </p>
+
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Jurisdiction
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-gavel"></i
+                      ></span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Venue
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-landmark"></i
+                      ></span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Dispute Resolution
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-handshake"></i
+                      ></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Arbitration
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-scale-balanced"></i
+                      ></span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Class Action Waiver
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-users-slash"></i
+                      ></span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Legal Fees
+                      <span class="badge bg-primary rounded-pill"
+                        ><i class="fas fa-money-bill-wave"></i
+                      ></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="mt-4">
+                Our failure to enforce any right or provision of these Terms
+                will not be considered a waiver of those rights.
+              </p>
+            </section>
+
+            <!-- Changes to Terms Section -->
+            <section class="terms-section tab-pane fade" id="changes">
+              <h2 class="section-title">Changes to Terms</h2>
+              <p>
+                We reserve the right, at our sole discretion, to modify or
+                replace these Terms at any time. If a revision is material, we
+                will provide at least 30 days' notice prior to any new terms
+                taking effect.
+              </p>
+
+              <div class="alert alert-warning mt-4">
+                <h5>
+                  <i class="fas fa-bell me-2"></i> Notification of Changes
+                </h5>
+                <p class="mb-0">
+                  What constitutes a material change will be determined at our
+                  sole discretion. We will notify you of any changes by posting
+                  the new Terms on this page and updating the "Last Updated"
+                  date.
+                </p>
+              </div>
+
+              <p>
+                By continuing to access or use our service after those revisions
+                become effective, you agree to be bound by the revised terms. If
+                you do not agree to the new terms, please stop using the
+                service.
+              </p>
+
+              <p class="mt-3"><strong>Last Updated:</strong> January 1, 2023</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/about.js"></script>
+    <script>
+      // Activate tab navigation when clicking on quick nav links
+      document.addEventListener("DOMContentLoaded", function () {
+        var triggerTabList = [].slice.call(
+          document.querySelectorAll("#v-pills-tab a")
+        );
+        triggerTabList.forEach(function (triggerEl) {
+          var tabTrigger = new bootstrap.Tab(triggerEl);
+
+          triggerEl.addEventListener("click", function (event) {
+            event.preventDefault();
+            tabTrigger.show();
+
+            // Update URL hash
+            if (history.pushState) {
+              history.pushState(null, null, triggerEl.getAttribute("href"));
+            } else {
+              window.location.hash = triggerEl.getAttribute("href");
+            }
+          });
+        });
+
+        // Activate tab based on URL hash
+        if (window.location.hash) {
+          var hash = window.location.hash;
+          var triggerEl = document.querySelector(
+            '#v-pills-tab a[href="' + hash + '"]'
+          );
+          if (triggerEl) {
+            var tab = new bootstrap.Tab(triggerEl);
+            tab.show();
+          }
+        }
+      });
+
+      // Fix for scroll transitions - only run if about sections exist
+      function initScrollTransitions() {
+        const sections = document.querySelectorAll(".about-section");
+
+        // Only proceed if we actually have about sections
+        if (sections.length === 0) return;
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("section-visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: "0px 0px -10% 0px",
+          }
+        );
+
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
+
+      // Initialize when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        initScrollTransitions();
+      });
+
+      // Page load transition
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mark body as ready for fade-in
+        document.body.classList.add("page-ready");
+
+        // Add loaded class to transition elements after a short delay
+        setTimeout(function () {
+          const transitionElements =
+            document.querySelectorAll(".page-transition");
+          transitionElements.forEach((element) => {
+            element.classList.add("page-loaded");
+          });
+        }, 50);
+      });
+
+      // Load other sections
+      $(function () {
+        $("#footer").load("footer.html");
+
+        // Re-initialize scroll transitions after loading content
+        setTimeout(initScrollTransitions, 500);
+      });
+    </script>
+  </body>
+</html>

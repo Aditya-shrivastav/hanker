@@ -138,7 +138,74 @@
   </head>
   <body>
     <!-- Header Section -->
-    <div id="header"></div>
+    <div>
+      <!-- header.html -->
+      <nav class="navbar navbar-expand-lg" style="background: #fff">
+        <div class="container" style="padding: 15px 0px">
+          <!-- Company Logo, adjusts to navbar height -->
+          <a
+            class="navbar-brand p-0 m-0 d-flex align-items-center"
+            href="index.html"
+            style="height: 70%"
+          >
+            <img
+              src="./assets/logo.png"
+              alt="Source Node Technologies"
+              style="
+                height: 100%;
+                max-height: 70px;
+                width: auto;
+                display: block;
+              "
+            />
+            <span style="margin-left: 10px; color: #222">
+              Source Node Technologies
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto" style="gap: 2rem; font-size: 14px">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: #222"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="solutions.html"
+                  style="color: #222"
+                  >Solutions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" style="color: #222"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #222"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #222"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Solutions Hero Section -->
     <!-- Centered Hero Section with Background Image -->
@@ -168,306 +235,8 @@
       </div>
     </section>
 
-    <!-- Commercial Analytics Solution -->
-    <section id="solutions" class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 order-lg-1 order-2">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?fit=crop&w=1200&q=80"
-                alt="Commercial Analytics"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-            <div class="ps-lg-5">
-              <div class="solution-number">01</div>
-              <h2 class="solution-title">GenAI & Agentic AI Solutions</h2>
-              <p class="solution-description">
-                Build next-generation AI systems that automate reasoning,
-                enhance decisions, and deliver intelligent workflows across the
-                organization.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>LLM-based chatbots</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Agentic workflows</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>AI-driven automation</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Use-case design & PoCs</span>
-                </li>
-              </ul>
-              <!-- <div class="tech-stack">
-                <span class="tech-tag">Tableau</span>
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">SQL</span>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RWE/RWD Analytics Solution -->
-    <section class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="pe-lg-5">
-              <div class="solution-number">02</div>
-              <h2 class="solution-title">Machine Learning Solutions</h2>
-              <p class="solution-description">
-                Develop predictive ML models that optimize operations and enable
-                data-backed decisions.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Warranty prediction</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>HR attrition modeling</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Demand forecasting</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span> Anomaly detection</span>
-                </li>
-              </ul>
-              <!-- <div class="tech-stack">
-                <span class="tech-tag">R</span>
-                <span class="tech-tag">SAS</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">EMR Data</span>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074"
-                alt="RWE/RWD Analytics"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Business Intelligence Solution -->
-    <section class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 order-lg-1 order-2">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=1200&q=80"
-                alt="Business Intelligence"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-            <div class="ps-lg-5">
-              <div class="solution-number">03</div>
-              <h2 class="solution-title">Data Lakehouse Solutions</h2>
-              <p class="solution-description">
-                Build a modern data foundation with scalable lakehouse
-                architecture for analytics and AI.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Unified data storage</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Automated data pipelines</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>BI & ML readiness</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Governance frameworks</span>
-                </li>
-              </ul>
-              <!-- <div class="tech-stack">
-                <span class="tech-tag">Tableau</span>
-                <span class="tech-tag">Power BI</span>
-                <span class="tech-tag">Qlik</span>
-                <span class="tech-tag">Looker</span>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Master Data Management Solution -->
-    <section class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="pe-lg-5">
-              <div class="solution-number">04</div>
-              <h2 class="solution-title">Dashboard & Analytics</h2>
-              <p class="solution-description">
-                Deliver powerful dashboards that simplify decision-making and
-                provide real-time insights.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Power BI dashboards</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span> Custom data visuals</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>KPI-driven reporting</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Trending & insights</span>
-                </li>
-              </ul>
-              <!-- <div class="tech-stack">
-                <span class="tech-tag">Informatica</span>
-                <span class="tech-tag">Talend</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">AWS</span>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?fit=crop&w=1200&q=80"
-                alt="Master Data Management"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Conversational AI Solution -->
-    <section class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 order-lg-1 order-2">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?fit=crop&w=1200&q=80"
-                alt="Conversational AI"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-            <div class="ps-lg-5">
-              <div class="solution-number">05</div>
-              <h2 class="solution-title">Process Automation</h2>
-              <p class="solution-description">
-                Automate repetitive workflows to reduce manual effort and
-                improve speed, compliance, and efficiency.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Procure-to-pay</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Order-to-cash</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Employee onboarding</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Supply chain workflows</span>
-                </li>
-              </ul>
-              <!-- <div class="tech-stack">
-                <span class="tech-tag">Dialogflow</span>
-                <span class="tech-tag">Azure Bot</span>
-                <span class="tech-tag">AWS Lex</span>
-                <span class="tech-tag">Python NLP</span>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RPA & Automation Solution
-    <section class="solution-section">
-      <div class="container">
-        <div class="row solution-content">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <div class="pe-lg-5">
-              <div class="solution-number">06</div>
-              <h2 class="solution-title">Enterprise App Development</h2>
-              <p class="solution-description">
-                Build robust enterprise applications that streamline operations
-                and integrate seamlessly with your systems.
-              </p>
-              <ul class="solution-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Process automation and workflow optimization</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Data entry and validation automation</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>Report generation and distribution</span>
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  <span>System integration and data synchronization</span>
-                </li>
-              </ul>
-              <div class="tech-stack">
-                <span class="tech-tag">UiPath</span>
-                <span class="tech-tag">Automation Anywhere</span>
-                <span class="tech-tag">Blue Prism</span>
-                <span class="tech-tag">Python</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="solution-image">
-              <img
-                src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?fit=crop&w=1200&q=80"
-                alt="RPA & Automation"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <!-- Solutions Wrapper -->
+    <div id="solutions-wrapper"></div>
 
     <!-- Contact CTA Section -->
     <div id="contact-cta"></div>
@@ -478,32 +247,9 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/solutions.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Load Header
-        $("#header").load("header.html", function () {
-          // Fix collapse not pushing page down (production issue)
-          const nav = document.getElementById("mainNav");
-          const toggler = document.querySelector(".navbar-toggler");
-
-          if (nav && toggler) {
-            // Reinitialize collapse properly
-            window.navCollapse = new bootstrap.Collapse(nav, {
-              toggle: false,
-            });
-
-            // Ensure toggle works AFTER dynamic load
-            toggler.addEventListener("click", function () {
-              window.navCollapse.toggle();
-            });
-          }
-
-          // Set active nav
-          const currentPage = window.location.pathname.split("/").pop();
-          $(".nav-link").removeClass("active");
-          $(`a[href='${currentPage}']`).addClass("active");
-        });
-
         // Load other sections
         $("#contact-cta").load("contact-cta.html");
         $("#footer").load("footer.html");

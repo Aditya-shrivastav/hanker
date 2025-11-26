@@ -186,6 +186,14 @@
           width: 100%;
           height: auto;
         }
+
+        .carousel-caption-box {
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.5) 100%
+          ) !important;
+        }
       }
 
       @media (max-width: 400px) {
@@ -208,7 +216,71 @@
   </head>
   <body>
     <!-- Header -->
-    <div id="header"></div>
+    <div>
+      <!-- header.html -->
+      <nav class="navbar navbar-expand-lg" style="background: #fff">
+        <div class="container" style="padding: 15px 0px">
+          <!-- Company Logo, adjusts to navbar height -->
+          <a
+            class="navbar-brand p-0 m-0 d-flex align-items-center"
+            href="index.html"
+            style="height: 70%"
+          >
+            <img
+              src="./assets/logo.png"
+              alt="Source Node Technologies"
+              style="
+                height: 100%;
+                max-height: 70px;
+                width: auto;
+                display: block;
+              "
+            />
+            <span style="margin-left: 10px; color: #222">
+              Source Node Technologies
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto" style="gap: 2rem; font-size: 14px">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html" style="color: #222"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="solutions.html" style="color: #222"
+                  >Solutions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" style="color: #222"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #222"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #222"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Hero Carousel -->
     <section class="container-fluid p-0">
@@ -218,112 +290,13 @@
         data-bs-ride="carousel"
         data-bs-interval="13500"
       >
-        <div class="carousel-inner w-100" style="height: 600px">
-          <!-- Slide 1 — AI & GenAI -->
-          <div class="carousel-item active h-100" style="height: 600px">
-            <div
-              class="w-100 h-100 d-flex align-items-start justify-content-start"
-              style="
-                background-image: url('./assets/hero_slide_3.jpeg');
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="carousel-caption-box">
-                <h1 class="text-primary mb-2">
-                  Artifical Intelligence, GenAI and Agentic AI Solutions
-                </h1>
-                <p class="carousel-sub-heading mb-0">
-                  Next Generation AI, GenAI and Agentic systems that
-                  understands, reason and act autonomously to deliver smarter
-                  business outcomes.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div
+          id="carouselInner"
+          class="carousel-inner w-100"
+          style="height: 600px"
+        ></div>
 
-          <!-- Slide 2 — Machine Learning -->
-          <div class="carousel-item h-100" style="height: 600px">
-            <div
-              class="w-100 h-100 d-flex align-items-start justify-content-start"
-              style="
-                background-image: url('./assets/machine_learning.jpg');
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="carousel-caption-box">
-                <h1 class="text-primary mb-2">Machine Learning</h1>
-                <p class="carousel-sub-heading mb-0">
-                  Predictive analytics, anomaly detection, forecasting, and
-                  custom ML models built for business impact.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 — Data Lakehouse -->
-          <div class="carousel-item h-100" style="height: 600px">
-            <div
-              class="w-100 h-100 d-flex align-items-start justify-content-start"
-              style="
-                background-image: url('./assets/data_lakehouse.jpg');
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="carousel-caption-box">
-                <h1 class="text-primary mb-2">Data Lakehouse</h1>
-                <p class="carousel-sub-heading mb-0">
-                  End-to-end data pipelines, unified data platforms, and modern
-                  lakehouse architecture for scalable analytics.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 — Dashboard Development -->
-          <div class="carousel-item h-100" style="height: 600px">
-            <div
-              class="w-100 h-100 d-flex align-items-start justify-content-start"
-              style="
-                background-image: url('./assets/dashboard_dev.jpg');
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="carousel-caption-box">
-                <h1 class="text-primary mb-2">Dashboard Development</h1>
-                <p class="carousel-sub-heading mb-0">
-                  Power BI dashboards delivered end-to-end with user-centric
-                  design and data-driven insights.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5 — Process Automation -->
-          <div class="carousel-item h-100" style="height: 600px">
-            <div
-              class="w-100 h-100 d-flex align-items-start justify-content-start"
-              style="
-                background-image: url('./assets/hero_slide_1.jpeg');
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="carousel-caption-box">
-                <h1 class="text-primary mb-2">Process Automation Services</h1>
-                <p class="carousel-sub-heading mb-0">
-                  Streamlining workflows with business process re-engineering
-                  and enterprise automation solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel Controls: Black background, white arrow, margin off edges -->
+        <!-- Controls remain the same -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -344,13 +317,10 @@
             justify-content: center;
           "
         >
-          <span
-            class="carousel-control-prev-icon"
-            aria-hidden="true"
-            style="color: #fff"
-          ></span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+
         <button
           class="carousel-control-next"
           type="button"
@@ -371,11 +341,7 @@
             justify-content: center;
           "
         >
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-            style="color: #fff"
-          ></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -413,143 +379,7 @@
           </button>
 
           <!-- Owl Carousel -->
-          <div class="owl-carousel owl-theme">
-            <!-- Service 1: AI & GenAI -->
-            <div class="item">
-              <div class="card service-card rounded">
-                <div class="service-image">
-                  <img
-                    src="./assets/hero_slide_3.jpeg"
-                    class="card-img-top w-100"
-                    alt="AI & GenAI"
-                  />
-                </div>
-                <div class="card-body mt-3">
-                  <h5 class="card-title fw-bold text-dark">
-                    Artifical Intelligence, GenAI and Agentic AI Solutions
-                  </h5>
-                  <p class="card-text text-muted">
-                    Building intelligent AI systems that automate conversations,
-                    boost productivity, and enhance decision-making.
-                  </p>
-                  <ul class="service-features text-muted">
-                    <li>LLM-based chatbots</li>
-                    <li>Generative automation workflows</li>
-                    <li>Prompt engineering</li>
-                    <li>Enterprise GenAI integrations</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 2: Machine Learning -->
-            <div class="item">
-              <div class="card service-card rounded">
-                <div class="service-image">
-                  <img
-                    src="./assets/machine_learning.jpg"
-                    class="card-img-top w-100"
-                    alt="Machine Learning"
-                  />
-                </div>
-                <div class="card-body mt-3">
-                  <h5 class="card-title fw-bold text-dark">Machine Learning</h5>
-                  <p class="card-text text-muted">
-                    Building predictive and analytical models that deliver
-                    accurate, actionable business insights.
-                  </p>
-                  <ul class="service-features text-muted">
-                    <li>Forecasting & demand prediction</li>
-                    <li>Anomaly detection</li>
-                    <li>Predictive maintenance</li>
-                    <li>HR & sales analytics models</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 3: Data Lakehouse -->
-            <div class="item">
-              <div class="card service-card rounded">
-                <div class="service-image">
-                  <img
-                    src="./assets/data_lakehouse.jpg"
-                    class="card-img-top w-100"
-                    alt="Data Lakehouse"
-                  />
-                </div>
-                <div class="card-body mt-3">
-                  <h5 class="card-title fw-bold text-dark">Data Lakehouse</h5>
-                  <p class="card-text text-muted">
-                    Modernizing your data architecture for unified analytics,
-                    scalability, and real-time accessibility.
-                  </p>
-                  <ul class="service-features text-muted">
-                    <li>Data pipeline engineering</li>
-                    <li>Unified data platform setup</li>
-                    <li>ETL/ELT frameworks</li>
-                    <li>Lakehouse architecture design</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 4: Dashboard Development -->
-            <div class="item">
-              <div class="card service-card rounded">
-                <div class="service-image">
-                  <img
-                    src="./assets/dashboard_dev.jpg"
-                    class="card-img-top w-100"
-                    alt="Dashboard Development"
-                  />
-                </div>
-                <div class="card-body mt-3">
-                  <h5 class="card-title fw-bold text-dark">
-                    Dashboard Development
-                  </h5>
-                  <p class="card-text text-muted">
-                    Delivering intuitive dashboards that present your data with
-                    clarity, precision, and powerful insights.
-                  </p>
-                  <ul class="service-features text-muted">
-                    <li>Power BI dashboard design</li>
-                    <li>Advanced analytics & insights</li>
-                    <li>Executive KPI dashboards</li>
-                    <li>Self-service BI enablement</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 5: Process Automation -->
-            <div class="item">
-              <div class="card service-card rounded">
-                <div class="service-image">
-                  <img
-                    src="./assets/hero_slide_1.jpeg"
-                    class="card-img-top w-100"
-                    alt="Process Automation"
-                  />
-                </div>
-                <div class="card-body mt-3">
-                  <h5 class="card-title fw-bold text-dark">
-                    Process Automation
-                  </h5>
-                  <p class="card-text text-muted">
-                    Automating repetitive workflows to improve efficiency,
-                    reduce errors, and save operational costs.
-                  </p>
-                  <ul class="service-features text-muted">
-                    <li>Approval workflow automation</li>
-                    <li>RPA & low-code automation</li>
-                    <li>Supply chain process automation</li>
-                    <li>Employee onboarding automation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="owl-carousel owl-theme" id="servicesCarousel"></div>
         </div>
 
         <div class="row mt-5">
@@ -576,64 +406,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Initialize Owl Carousel -->
-    <script>
-      $(document).ready(function () {
-        var owl = $(".owl-carousel");
+    <script src="./js/home.js"></script>
 
-        owl.owlCarousel({
-          loop: true,
-          margin: 24,
-          nav: false, // Disable default navigation
-          dots: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            768: {
-              items: 2,
-            },
-            992: {
-              items: 3,
-            },
-          },
-        });
-
-        // Custom navigation
-        $(".custom-nav.next").click(function () {
-          owl.trigger("next.owl.carousel");
-        });
-
-        $(".custom-nav.prev").click(function () {
-          owl.trigger("prev.owl.carousel");
-        });
-      });
-    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Load Header
-        $("#header").load("header.html", function () {
-          // Fix collapse not pushing page down (production issue)
-          const nav = document.getElementById("mainNav");
-          const toggler = document.querySelector(".navbar-toggler");
-
-          if (nav && toggler) {
-            // Reinitialize collapse properly
-            window.navCollapse = new bootstrap.Collapse(nav, {
-              toggle: false,
-            });
-
-            // Ensure toggle works AFTER dynamic load
-            toggler.addEventListener("click", function () {
-              window.navCollapse.toggle();
-            });
-          }
-
-          // Set active nav
-          const currentPage = window.location.pathname.split("/").pop();
-          $(".nav-link").removeClass("active");
-          $(`a[href='${currentPage}']`).addClass("active");
-        });
-
         // Load other sections
         $("#contact-cta").load("contact-cta.html");
         $("#footer").load("footer.html");

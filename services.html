@@ -221,7 +221,74 @@
   </head>
   <body>
     <!-- Header Section -->
-    <div id="header"></div>
+    <div>
+      <!-- header.html -->
+      <nav class="navbar navbar-expand-lg" style="background: #fff">
+        <div class="container" style="padding: 15px 0px">
+          <!-- Company Logo, adjusts to navbar height -->
+          <a
+            class="navbar-brand p-0 m-0 d-flex align-items-center"
+            href="index.html"
+            style="height: 70%"
+          >
+            <img
+              src="./assets/logo.png"
+              alt="Source Node Technologies"
+              style="
+                height: 100%;
+                max-height: 70px;
+                width: auto;
+                display: block;
+              "
+            />
+            <span style="margin-left: 10px; color: #222">
+              Source Node Technologies
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto" style="gap: 2rem; font-size: 14px">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color: #222"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="solutions.html" style="color: #222"
+                  >Solutions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="services.html"
+                  style="color: #222"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #222"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #222"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <!-- Services Hero Section -->
     <section
@@ -249,494 +316,7 @@
       </div>
     </section>
 
-    <!-- 5. Data Trainings -->
-    <section
-      id="data-training"
-      class="service-section d-flex align-items-center py-5"
-    >
-      <div class="container">
-        <!-- Header -->
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="service-header text-center mb-5">
-              <i
-                class="bi bi-mortarboard service-icon-large fs-1 text-primary mb-4"
-              ></i>
-              <h2 class="display-4 fw-bold text-dark mb-3">Data Trainings</h2>
-              <p class="lead text-muted mb-0">
-                Upskilling teams to build a strong data-driven culture.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-7 text-column">
-            <!-- Point 1 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-lightbulb"></i></div>
-                <h3 class="feature-title">Literacy</h3>
-              </div>
-              <ul class="sub-features">
-                <li><i class="bi bi-check-circle-fill"></i> Data basics</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Understanding KPIs
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Dashboard
-                  interpretation
-                </li>
-              </ul>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-cpu"></i></div>
-                <h3 class="feature-title">ML Concepts</h3>
-              </div>
-              <ul class="sub-features">
-                <li><i class="bi bi-check-circle-fill"></i> ML fundamentals</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Real-world case
-                  studies
-                </li>
-                <li><i class="bi bi-check-circle-fill"></i> Practical demos</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-5 image-column">
-            <div class="service-image">
-              <img
-                src="https://images.unsplash.com/photo-1532619187608-e5375cab36aa"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Data Consulting -->
-    <section
-      id="data-consulting"
-      class="service-section d-flex align-items-center py-5"
-    >
-      <div class="container">
-        <!-- Header -->
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="service-header text-center mb-5">
-              <i
-                class="bi bi-briefcase service-icon-large fs-1 text-primary mb-4"
-              ></i>
-              <h2 class="display-4 fw-bold text-dark mb-3">Data Consulting</h2>
-              <p class="lead text-muted mb-0">
-                Strategic guidance to build scalable, high-performance data
-                systems.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <!-- IMAGE LEFT -->
-          <div class="col-lg-5 image-column order-lg-1 order-2">
-            <div class="service-image">
-              <img
-                src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-7 text-column order-lg-2 order-1">
-            <!-- Point 1 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-map"></i></div>
-                <h3 class="feature-title">Strategy</h3>
-              </div>
-              <ul class="sub-features">
-                <li><i class="bi bi-check-circle-fill"></i> Data roadmaps</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Use-case
-                  prioritization
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Analytics
-                  modernization
-                </li>
-              </ul>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-cloud"></i></div>
-                <h3 class="feature-title">Lakehouse</h3>
-              </div>
-              <ul class="sub-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Architecture design
-                </li>
-                <li><i class="bi bi-check-circle-fill"></i> Data pipelines</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Governance setup
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 1. Process Automation -->
-    <section
-      id="process-automation"
-      class="service-section d-flex align-items-center py-5"
-    >
-      <div class="container">
-        <!-- Header -->
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="service-header text-center mb-5">
-              <i
-                class="bi bi-gear-wide-connected service-icon-large fs-1 text-primary mb-4"
-              ></i>
-              <h2 class="display-4 fw-bold text-dark mb-3">
-                Process Automation
-              </h2>
-              <p class="lead text-muted mb-0">
-                Automating end-to-end workflows for efficiency and accuracy.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div class="row align-items-center">
-          <div class="col-lg-7 text-column">
-            <!-- Point 1 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-diagram-3"></i></div>
-                <h3 class="feature-title">Workflows</h3>
-              </div>
-              <ul class="sub-features">
-                <li><i class="bi bi-check-circle-fill"></i> Procure-to-pay</li>
-                <li><i class="bi bi-check-circle-fill"></i> Order-to-cash</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Supply chain processes
-                </li>
-              </ul>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon">
-                  <i class="bi bi-fingerprint"></i>
-                </div>
-                <h3 class="feature-title">Approvals</h3>
-              </div>
-              <ul class="sub-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> PR to PO automation
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Delegation of
-                  authority flows
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Multi-level approvals
-                </li>
-              </ul>
-            </div>
-            <!-- End -->
-          </div>
-
-          <div class="col-lg-5 image-column">
-            <div class="service-image">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 2. Dashboard Development -->
-    <section
-      id="dashboard-dev"
-      class="service-section d-flex align-items-center py-5"
-    >
-      <div class="container">
-        <!-- Header -->
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="service-header text-center mb-5">
-              <i
-                class="bi bi-bar-chart-line service-icon-large fs-1 text-primary mb-4"
-              ></i>
-              <h2 class="display-4 fw-bold text-dark mb-3">
-                Dashboard Development
-              </h2>
-              <p class="lead text-muted mb-0">
-                Transforming data into intuitive, decision-ready dashboards.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <!-- IMAGE LEFT -->
-          <div class="col-lg-5 image-column order-lg-1 order-2">
-            <div class="service-image">
-              <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
-              />
-            </div>
-          </div>
-
-          <!-- TEXT RIGHT -->
-          <div class="col-lg-7 text-column order-lg-2 order-1">
-            <!-- Point 1 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-bar-chart"></i></div>
-                <h3 class="feature-title">Power BI</h3>
-              </div>
-              <ul class="sub-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> End-to-end dashboards
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Automated data refresh
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Governed access layers
-                </li>
-              </ul>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-palette"></i></div>
-                <h3 class="feature-title">Visuals</h3>
-              </div>
-              <ul class="sub-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Interactive charts
-                </li>
-                <li><i class="bi bi-check-circle-fill"></i> Custom visuals</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> KPI storytelling
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!-- 3A. AI & GenAI -->
-<section id="ai-genai" class="service-section d-flex align-items-center py-5">
-  <div class="container">
-    <!-- Header -->
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="service-header text-center mb-5">
-          <i class="bi bi-robot service-icon-large fs-1 text-primary mb-4"></i>
-          <h2 class="display-4 fw-bold text-dark mb-3">AI & GenAI</h2>
-          <p class="lead text-muted mb-0">
-            Intelligent automation powered by large language models and generative AI.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="row align-items-center">
-      <div class="col-lg-7 text-column">
-
-        <!-- GenAI Feature -->
-        <div class="feature-item p-3 mb-2">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <i class="bi bi-stars"></i>
-            </div>
-            <h3 class="feature-title">GenAI Solutions</h3>
-          </div>
-          <ul class="sub-features">
-            <li><i class="bi bi-check-circle-fill"></i> LLM-powered chatbots</li>
-            <li><i class="bi bi-check-circle-fill"></i> Content & report generation</li>
-            <li><i class="bi bi-check-circle-fill"></i> Workflow & process automation</li>
-          </ul>
-        </div>
-
-        <!-- Conversational AI -->
-        <div class="feature-item p-3 mb-2">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <i class="bi bi-chat-square-text"></i>
-            </div>
-            <h3 class="feature-title">Conversational AI</h3>
-          </div>
-          <ul class="sub-features">
-            <li><i class="bi bi-check-circle-fill"></i> Natural language automation</li>
-            <li><i class="bi bi-check-circle-fill"></i> Conversational analytics</li>
-            <li><i class="bi bi-check-circle-fill"></i> Enterprise Q&A assistants</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="col-lg-5 image-column">
-        <div class="service-image">
-          <img src="./assets/hero_slide_3.jpeg" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- 3B. Machine Learning -->
-<section id="machine-learning" class="service-section d-flex align-items-center py-5">
-  <div class="container">
-    <!-- Header -->
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="service-header text-center mb-5">
-          <i class="bi bi-graph-up-arrow service-icon-large fs-1 text-primary mb-4"></i>
-          <h2 class="display-4 fw-bold text-dark mb-3">Machine Learning</h2>
-          <p class="lead text-muted mb-0">
-            Predictive, analytical, and data-driven models for smarter decisions.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="row align-items-center">
-      <div class="col-lg-7 text-column">
-
-        <!-- Prediction Models -->
-        <div class="feature-item p-3 mb-2">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <i class="bi bi-graph-up"></i>
-            </div>
-            <h3 class="feature-title">Predictive Models</h3>
-          </div>
-          <ul class="sub-features">
-            <li><i class="bi bi-check-circle-fill"></i> Demand forecasting</li>
-            <li><i class="bi bi-check-circle-fill"></i> Warranty claim prediction</li>
-            <li><i class="bi bi-check-circle-fill"></i> Attrition prediction</li>
-          </ul>
-        </div>
-
-        <!-- ML Intelligence -->
-        <div class="feature-item p-3 mb-2">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <i class="bi bi-cpu"></i>
-            </div>
-            <h3 class="feature-title">ML Intelligence</h3>
-          </div>
-          <ul class="sub-features">
-            <li><i class="bi bi-check-circle-fill"></i> Anomaly detection</li>
-            <li><i class="bi bi-check-circle-fill"></i> Predictive maintenance</li>
-            <li><i class="bi bi-check-circle-fill"></i> Recommendation systems</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="col-lg-5 image-column">
-        <div class="service-image">
-          <img src="./assets/ai_ml.png" />
-        </div>
-      </div>
-    </section>
-
-
-    <!-- 4. Application Development -->
-    <section
-      id="app-dev"
-      class="service-section d-flex align-items-center py-5"
-    >
-      <div class="container">
-        <!-- Header -->
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="service-header text-center mb-5">
-              <i
-                class="bi bi-window-stack service-icon-large fs-1 text-primary mb-4"
-              ></i>
-              <h2 class="display-4 fw-bold text-dark mb-3">
-                Application Development
-              </h2>
-              <p class="lead text-muted mb-0">
-                Modern enterprise applications for workflow optimization.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row align-items-center">
-          <!-- IMAGE LEFT -->
-          <div class="col-lg-5 image-column order-lg-1 order-2">
-            <div class="service-image">
-              <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984"
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-7 text-column order-lg-2 order-1">
-            <!-- Point 1 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon">
-                  <i class="bi bi-app-indicator"></i>
-                </div>
-                <h3 class="feature-title">Enterprise Apps</h3>
-              </div>
-              <ul class="sub-features">
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Custom applications
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Workflow systems
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Integration-ready
-                </li>
-              </ul>
-            </div>
-
-            <!-- Point 2 -->
-            <div class="feature-item p-3 mb-2">
-              <div class="feature-header">
-                <div class="feature-icon"><i class="bi bi-grid-1x2"></i></div>
-                <h3 class="feature-title">Experience</h3>
-              </div>
-              <ul class="sub-features">
-                <li><i class="bi bi-check-circle-fill"></i> Clean UI/UX</li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i> Mobile-first layouts
-                </li>
-                <li><i class="bi bi-check-circle-fill"></i> Easy navigation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div id="services-wrapper"></div>
 
     <!-- Contact CTA Section -->
     <div id="contact-cta"></div>
@@ -747,32 +327,9 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
+    <script src="./js/services.js"></script>
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Load Header
-        $("#header").load("header.html", function () {
-          // Fix collapse not pushing page down (production issue)
-          const nav = document.getElementById("mainNav");
-          const toggler = document.querySelector(".navbar-toggler");
-
-          if (nav && toggler) {
-            // Reinitialize collapse properly
-            window.navCollapse = new bootstrap.Collapse(nav, {
-              toggle: false,
-            });
-
-            // Ensure toggle works AFTER dynamic load
-            toggler.addEventListener("click", function () {
-              window.navCollapse.toggle();
-            });
-          }
-
-          // Set active nav
-          const currentPage = window.location.pathname.split("/").pop();
-          $(".nav-link").removeClass("active");
-          $(`a[href='${currentPage}']`).addClass("active");
-        });
-
         // Load other sections
         $("#contact-cta").load("contact-cta.html");
         $("#footer").load("footer.html");
