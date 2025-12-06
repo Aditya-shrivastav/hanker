@@ -1,3 +1,5 @@
+const isMobile = window.innerWidth < 768;
+
 const heroSlides = [
   {
     title: "Artificial Intelligence, GenAI and Agentic AI Solutions",
@@ -46,7 +48,7 @@ const servicesData = [
     title: "Artificial Intelligence, GenAI and Agentic AI Solutions",
     description:
       "Building intelligent AI systems that automate conversations, boost productivity, and enhance decision-making.",
-    imageDesktop: "./assets/hero_slide_3.jpeg",
+    imageDesktop: "./assets/ai_service_mobile.jpg",
     features: [
       "LLM-based chatbots",
       "Generative automation workflows",
@@ -58,7 +60,7 @@ const servicesData = [
     title: "Machine Learning",
     description:
       "Building predictive and analytical models that deliver accurate, actionable business insights.",
-    imageDesktop: "./assets/machine_learning.jpg",
+    imageDesktop: "./assets/ml_service.jpg",
     features: [
       "Forecasting & demand prediction",
       "Anomaly detection",
@@ -70,7 +72,7 @@ const servicesData = [
     title: "Data Lakehouse",
     description:
       "Modernizing your data architecture for unified analytics, scalability, and real-time accessibility.",
-    imageDesktop: "./assets/data_lakehouse.jpg",
+    imageDesktop: "./assets/data_lakehouse_service.jpg",
     features: [
       "Data pipeline engineering",
       "Unified data platform setup",
@@ -82,7 +84,7 @@ const servicesData = [
     title: "Dashboard Development",
     description:
       "Delivering intuitive dashboards that present your data with clarity, precision, and powerful insights.",
-    imageDesktop: "./assets/dashboard_dev.jpg",
+    imageDesktop: "./assets/dashboard_dev_service.jpg",
     features: [
       "Power BI dashboard design",
       "Advanced analytics & insights",
@@ -94,7 +96,7 @@ const servicesData = [
     title: "Process Automation",
     description:
       "Automating repetitive workflows to improve efficiency, reduce errors, and save operational costs.",
-    imageDesktop: "./assets/hero_slide_1.jpeg",
+    imageDesktop: "./assets/process_automation_service.jpg",
     features: [
       "Approval workflow automation",
       "RPA & low-code automation",
@@ -104,7 +106,69 @@ const servicesData = [
   },
 ];
 
-const isMobile = window.innerWidth < 768;
+// Partner data (can be moved to a separate JSON file if preferred)
+const partnersData = [
+  {
+    name: "Alkem Laboratories",
+    logo: "./assets/alkem_lab.png",
+    alt: "Alkem Laboratories",
+  },
+  {
+    name: "Zydus Healthcare",
+    logo: "./assets/zydus_healthcare.png",
+    alt: "Zydus Healthcare",
+  },
+  {
+    name: "Audi",
+    logo: "./assets/audi.jpg",
+    alt: "Audi",
+  },
+  {
+    name: "Amneal",
+    logo: "https://amneal.com/wp-content/themes/amneal-impax/images/amneal-logo.svg",
+    alt: "Amneal",
+  },
+];
+
+// Function to create a single partner column
+function createPartnerColumn(partner) {
+  const column = document.createElement("div");
+  column.className = "col-6 col-md-4 col-lg-2";
+
+  column.innerHTML = `
+    <div class="partner-logo p-4 bg-white rounded-3 shadow-sm d-flex flex-column align-items-center justify-content-center h-100">
+      <div class="logo-container mb-3">
+        <img
+          src="${partner.logo}"
+          alt="${partner.alt}"
+          class="img-fluid"
+          style="transition: all 0.3s ease;"
+        />
+      </div>
+      <div class="company-name text-center">
+        <p class="fw-semibold mb-0 text-dark">${partner.name}</p>
+      </div>
+    </div>
+  `;
+
+  return column;
+}
+
+// Function to load partners into the container
+function loadPartners() {
+  const partnersContainer = document.getElementById("partners-container");
+
+  if (!partnersContainer) return;
+
+  // Clear any existing content (optional)
+  partnersContainer.innerHTML = "";
+
+  // Create and append each partner column
+  partnersData.forEach((partner) => {
+    const partnerColumn = createPartnerColumn(partner);
+    partnersContainer.appendChild(partnerColumn);
+  });
+}
 
 function renderHeroSlides() {
   const carouselInner = document.getElementById("carouselInner");
@@ -193,4 +257,5 @@ function renderServiceCarousel() {
 document.addEventListener("DOMContentLoaded", () => {
   renderHeroSlides();
   renderServiceCarousel();
+  loadPartners();
 });

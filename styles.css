@@ -18,10 +18,6 @@
   font-size: 18px !important;
 }
 
-.navbar .container {
-  height: 85px !important;
-}
-
 .navbar-nav .nav-link {
   font-family: "Inter-SemiBold", "Inter", sans-serif;
 }
@@ -161,19 +157,7 @@ li {
 
 @media (max-width: 992px) {
   .navbar {
-    height: auto !important;
-    min-height: 85px;
     font-size: 16px !important;
-  }
-
-  .navbar .container {
-    height: auto !important;
-    padding: 10px 0 !important;
-  }
-
-  .navbar-collapse {
-    margin-top: 1rem;
-    padding: 1rem 0;
   }
 
   .navbar-nav {
@@ -192,10 +176,6 @@ li {
 
   .custom-nav {
     display: none;
-  }
-
-  .navbar .container .navbar-brand {
-    height: 40px !important;
   }
 
   .navbar .navbar-toggler {
