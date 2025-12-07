@@ -190,69 +190,7 @@
   </head>
   <body>
     <!-- Header Section -->
-    <div>
-      <!-- header.html -->
-      <nav class="navbar navbar-expand-lg" style="background: #fff">
-        <div class="container" style="padding: 15px 0px">
-          <!-- Company Logo, adjusts to navbar height -->
-          <a
-            class="navbar-brand p-0 m-0 d-flex align-items-center"
-            href="index.html"
-            style="height: 70%"
-          >
-            <img
-              src="./assets/logo.png"
-              alt="Source Node Technologies"
-              style="height: 40px; width: auto; display: block"
-            />
-            <span style="margin-left: 10px; color: #222">
-              Source Node Technologies
-            </span>
-          </a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto" style="gap: 2rem; font-size: 14px">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html" style="color: #222"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="solutions.html"
-                  style="color: #222"
-                  >Solutions</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html" style="color: #222"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: #222"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="color: #222"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <div id="header"></div>
 
     <!-- Solutions Hero Section -->
     <!-- Centered Hero Section with Background Image -->
@@ -298,6 +236,8 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Load other sections
+        $("#header").load("header.html");
+
         $("#contact-cta").load("contact-cta.html");
         $("#footer").load("footer.html");
       });
