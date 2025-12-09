@@ -49,3 +49,27 @@
     </div>
   </div>
 </nav>
+<script>
+  (function () {
+    // Simple function to highlight current page
+    function highlightCurrentPage() {
+      const currentPage =
+        window.location.pathname.split("/").pop() || "index.html";
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
+        }
+      });
+    }
+
+    // Run immediately
+    highlightCurrentPage();
+
+    // Also run on browser back/forward navigation
+    window.addEventListener("popstate", highlightCurrentPage);
+  })();
+</script>

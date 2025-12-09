@@ -10,6 +10,17 @@
       content="Source Node Technologies - the data experts"
     />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load other sections
+        $("#header").load("header.html");
+        $("#contact-cta").load("contact-cta.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
     <!-- ===== OPEN GRAPH TAGS (for social media/chat sharing) ===== -->
     <meta property="og:title" content="Source Node Technologies" />
     <meta property="og:description" content="the data experts" />
