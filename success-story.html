@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Success Story | Source Node Technologies</title>
+
+    <style>
+      html {
+        visibility: hidden;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <meta data-include="head.html" />
+
+    <style>
+      .story-hero {
+        background: linear-gradient(135deg, #f8faff 0%, #eef3ff 100%);
+      }
+
+      .story-content h2,
+      .story-content h3 {
+        margin-top: 2.5rem;
+        font-weight: 600;
+      }
+
+      .story-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #495057;
+      }
+
+      .story-media {
+        margin: 2.5rem 0;
+        max-width: 500px;
+      }
+
+      .story-media img,
+      .story-media video {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #e9ecef;
+      }
+
+      .highlight-box {
+        background: #f8f9fa;
+        border-left: 4px solid #4a6fff;
+        padding: 1.5rem;
+        margin: 2.5rem 0;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <!-- Hero -->
+    <section class="story-hero py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9">
+            <h1 id="story-title" class="display-5 fw-bold mb-3"></h1>
+            <p id="story-subtitle" class="lead text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 story-content" id="story-content">
+            <!-- Loaded HTML goes here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./js/head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/success-story-details.js"></script>
+
+    <script>
+      // Page load transition
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mark body as ready for fade-in
+        document.body.classList.add("page-ready");
+
+        // Add loaded class to transition elements after a short delay
+        setTimeout(function () {
+          const transitionElements =
+            document.querySelectorAll(".page-transition");
+          transitionElements.forEach((element) => {
+            element.classList.add("page-loaded");
+          });
+        }, 50);
+      });
+
+      // Smooth page exit for internal links
+      document.addEventListener("click", function (e) {
+        const link = e.target.closest("a");
+        if (link && link.href) {
+          const href = link.href;
+          const currentOrigin = window.location.origin;
+
+          // Check if it's an internal link
+          if (
+            href.startsWith(currentOrigin + "/") ||
+            href === currentOrigin + "/" ||
+            href === currentOrigin
+          ) {
+            e.preventDefault();
+
+            // Add exit animation
+            document.body.style.opacity = "0";
+            document.body.style.transition = "opacity 0.3s ease-out";
+
+            // Navigate after animation
+            setTimeout(function () {
+              window.location.href = href;
+            }, 300);
+          }
+        }
+      });
+
+      // Handle browser back/forward buttons
+      window.addEventListener("pageshow", function (e) {
+        if (e.persisted) {
+          document.body.style.opacity = "1";
+        }
+      });
+    </script>
+  </body>
+</html>

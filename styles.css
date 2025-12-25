@@ -18,6 +18,19 @@
   font-size: 18px !important;
 }
 
+.navbar-nav {
+  gap: 1rem;
+}
+
+.nav-item {
+  width: fit-content;
+  text-align: center;
+}
+
+.nav-link {
+  padding: 8px 4px !important;
+}
+
 .navbar-nav .nav-link {
   font-family: "Inter-SemiBold", "Inter", sans-serif;
 }
@@ -158,10 +171,6 @@ li {
 @media (max-width: 992px) {
   .navbar {
     font-size: 16px !important;
-  }
-
-  .navbar-nav {
-    gap: 1rem !important;
   }
 }
 
